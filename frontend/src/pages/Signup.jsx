@@ -5,7 +5,7 @@ import { Heading } from "../components/Heading"
 import { InputBox } from "../components/InputBox"
 import { SubHeading } from "../components/SubHeading"
 import axios from "axios";
-import URL from "../../config"
+import {SignupURL} from "../../config"
 import { useNavigate } from "react-router-dom"
 
 export const Signup = () => {
@@ -37,7 +37,7 @@ export const Signup = () => {
         }} placeholder="********" label={"Password"} />
         <div className="pt-4">
           <Button onClick={async() => {
-              const response = await axios.post(URL, {
+              const response = await axios.post(SignupURL, {
               username,
               firstName,
               lastName,

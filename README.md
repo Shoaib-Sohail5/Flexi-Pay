@@ -15,8 +15,8 @@ A payment application that replicates core functionalities of any UPI service.
 
 ## Tech Stack
 
-- **Frontend:** React, Tailwind CSS
-- **Backend:** Express JS
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Express.js, Node.js
 - **Database:** MongoDB
 - **Authentication:** JWT
 

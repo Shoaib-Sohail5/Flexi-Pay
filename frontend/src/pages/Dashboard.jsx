@@ -9,11 +9,11 @@ export const Dashboard = () => {
     const [balance, setBalance] = useState()
 
     useEffect(() => {
-        const token = localStorage.getItem('token'); // Assuming you store the token in localStorage
+        const token = localStorage.getItem('token'); 
     
         axios.get("http://localhost:3000/api/v1/account/balance", {
             headers: {
-                Authorization: `Bearer ${token}`  // Sending the token in the Authorization header
+                Authorization: `Bearer ${token}` 
             }
         })
         .then((res) => {
